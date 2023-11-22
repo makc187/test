@@ -1,0 +1,106 @@
+body {
+  /*background-color: red !important;*/
+}
+
+#browser.win.tabs-bottom #tabs-container {
+  /*background-color: green !important;*/
+  height: 90px !important;
+}
+
+#browser.native.win div#titlebar {
+  display: inline !important;
+}
+
+.bookmark-bar button {
+    /*padding: 2px;*/
+}
+#main .bookmark-bar button span {
+    /*margin-left: 2px;
+    position: absolute;
+    left: 3px;
+    text-shadow: 0 0 2px black, 0 0 6px black, 0 0 10px black;
+    font-weight: bold;
+    top: 12px;
+    font-size: 9px;*/
+}
+
+/*#browser .tab-strip .tab-position .tab img[srcset*="letswp"] {
+    box-shadow: 250px -20px 50px 1vw #51D390;
+}
+#browser .tab-strip .tab-position .tab img[srcset*="fbcdn.net"] {
+    box-shadow: 250px -20px 50px 1vw #3994F7;
+}
+#browser .tab-strip .tab-position .tab img[srcset*="reddit"] {
+    box-shadow: 250px -20px 50px 1vw #FF4500;
+}
+#browser .tab-strip .tab-position .tab img[srcset*="wikipedia"] {
+    box-shadow: 250px -20px 50px 1vw #808080;
+}*/
+
+.tab-position .tab.active .tab-header .favicon {
+    overflow: visible;
+}
+
+.tab-strip .tab-position .tab.active .tab-header .favicon {
+    filter: none;
+}
+
+#browser #tabs-tabbar-container {
+  height: 90px !important;
+}
+
+#browser.win.tabs-bottom #tabs-container,
+#browser #tabs-container {
+  display: flex;
+  height: 90px !important;
+}
+
+#browser.win.tabs-bottom #tabs-container .resize,
+#browser #tabs-container .resize {
+  height: 90px !important;
+}
+
+#browser .tab-strip {
+  height: 90px !important;
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+}
+
+#browser .tab-strip > span {
+  height: 30px;
+  min-width: 128px;
+}
+
+#browser .tab-strip > span .tab-header .title {
+  display: inline-flex !important;
+}
+
+#browser .tab-strip span .tab-position {
+  height: 30px !important;
+  min-width: 128px;
+  top: inherit !important;
+  left: inherit !important;
+  position: relative;
+  transform: inherit;
+}
+
+#browser .tab-strip .newtab {
+  right: 0px;
+  left: inherit !important;
+  top: 32px !important;
+  position: fixed !important;
+}
+
+#webview-container {
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 181px);
+}
+
+#webpage-stack {
+    width: 100%;
+    max-width: 177.78vh;
+    height: 56.25vw;
+    max-height: 100%;
+}
