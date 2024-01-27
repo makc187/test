@@ -1,14 +1,30 @@
 <html>
 <title></title>
 <body style="background-image: url('https://i.postimg.cc/PrYF3Ryr/Clipboard-08-01-2024-00-01.jpg'); background-size: cover;">
-<div style="width: 80%; height: 80%; margin: auto; padding-top: 250px; color: white;">
-Folgendes darf nur Max tun oder sagen:<br>
-3. ich bin so zucker, weswegen ich so süss bin <br>
-2. tzzz ahhh, mehrmals<br>
-1. ... und dennoch bist du hier<br>
-<br/>
-Jessy darf folgendes nicht:<br>
-1. mit Fingernägeln in max seine finger stechen<br>
+<div id="bla" style="width: 80%; height: 80%; margin: auto; padding-top: 250px; color: white;">
+
 </div>
+
+<script>
+  // Get the reference to the div element
+  const divBla = document.getElementById('bla');
+
+  // Fetch the content of index.txt using fetch API
+  fetch('index.txt')
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Failed to fetch content');
+      }
+      return response.text();
+    })
+    .then(textContent => {
+      // Set the text content of the div with the content of index.txt
+      divBla.textContent = textContent;
+    })
+    .catch(error => {
+      console.error(error.message);
+    });
+</script>
+
 </body>
 </html>
