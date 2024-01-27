@@ -10,7 +10,7 @@
   const divBla = document.getElementById('bla');
 
   // Fetch the content of index.txt using fetch API
-  fetch('bla.txt')
+  fetch(`bla.txt?timestamp=${timestamp}`)
     .then(response => {
       if (!response.ok) {
         throw new Error('Failed to fetch content');
