@@ -1,3 +1,4 @@
+function bla(){
 const divBla = document.getElementById('bla');
   fetch(`bla.txt?timestamp=${timestamp}`)
     .then(response => {
@@ -13,3 +14,4 @@ const divBla = document.getElementById('bla');
     .catch(error => {
       console.error(error.message);
     });
+}
