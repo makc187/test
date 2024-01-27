@@ -18,10 +18,7 @@
       return response.text();
     })
     .then(textContent => {
-      // Replace newline characters with HTML line break tags
       const formattedText = textContent.replace(/\n/g, '<br>');
-      
-      // Set the inner HTML of the div with the formatted content
       divBla.innerHTML = formattedText;
     })
     .catch(error => {
