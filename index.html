@@ -6,10 +6,7 @@
 </div>
 
 <script>
-  // Get the reference to the div element
   const divBla = document.getElementById('bla');
-
-  // Fetch the content of index.txt using fetch API
   fetch(`bla.txt?timestamp=${timestamp}`)
     .then(response => {
       if (!response.ok) {
