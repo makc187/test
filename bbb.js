@@ -1,5 +1,6 @@
 function bla(){
 const divBla = document.getElementById('bla');
+  var timestamp = (new Date()).getTime();
   fetch(`bla.txt?timestamp=${timestamp}`)
     .then(response => {
       if (!response.ok) {
